@@ -953,7 +953,7 @@ public final class DashMediaSource extends BaseMediaSource {
           seenEmptyIndex = true;
           availableStartTimeUs = 0;
           availableEndTimeUs = 0;
-        } else if (!seenEmptyIndex) {
+        } else if (!seenEmptyIndex && period.adaptationSets.get(i).type != C.TRACK_TYPE_TEXT) {
           long firstSegmentNum = index.getFirstSegmentNum();
           long adaptationSetAvailableStartTimeUs = index.getTimeUs(firstSegmentNum);
           availableStartTimeUs = Math.max(availableStartTimeUs, adaptationSetAvailableStartTimeUs);

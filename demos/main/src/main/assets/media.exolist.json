@@ -434,6 +434,10 @@
       {
         "name": "Big Buck Bunny (FLV Video)",
         "uri": "http://vod.leasewebcdn.com/bbb.flv?ri=1024&rs=150&start=0"
+      },
+      {
+        "name": "Shaka short text sample (60s audio & video, 22s text)",
+        "uri": "https://storage.googleapis.com/shaka-demo-assets/_bugs/exo-short-text/dash.mpd"
       }
     ]
   },
